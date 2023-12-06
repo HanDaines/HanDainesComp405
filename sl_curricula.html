@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>W3.CSS Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./W3.CSS_Template_files/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Times New Roman", Georgia, Serif;
+        background-image: url("imgs/nh_map.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+      }
+
+      .title_bar {
+        opacity: 100%;
+        position: relative;
+        margin-top: 10px;
+        align-items: center;
+      }
+
+      .navbar {
+        margin-top: 5px;
+        text-align: right;
+        font-family: Georgia;
+        font-style: oblique;
+        position: absolute;
+        bottom: 5%;
+        right: 10px;
+        color: white;
+        text-shadow: 1px 1px black;
+        font-size: larger;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .sl_title {
+        position: absolute;
+        top: 0%;
+        left: 20px;
+        text-shadow: 1px 1px white;
+        text-align: center;
+      }
+
+      .thinking_man {
+        margin-top: 20px;
+      }
+
+      /*.who_we_are { 
+}*/
+      .bottom_bar {
+        background-color: rgb(197, 230, 241);
+      }
+
+      .sticky_programs {
+        position: sticky;
+        top: 0;
+      }
+
+      .grounds_image {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        border-color: white;
+        position: relative;
+      }
+
+      .text-block {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background-color: black;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: right;
+      }
+
+      @media screen and (max-width:580px) {
+        .title_bar {
+          opacity: 100%;
+          /*position: relative;*/
+          margin-top: 10px;
+          align-items: center;
+          text-align: center;
+          width: 100%;
+          font-size: 80%;
+        }
+
+        .navbar {
+          margin-top: 5px;
+          text-align: center;
+          align-items: center;
+          font-family: Georgia;
+          font-style: oblique;
+          /*position: absolute;*/
+          bottom: -30px;
+          /*right: 5px;*/
+          color: whitesmoke;
+          text-shadow: 1px 1px black;
+          font-size: 90%;
+          width: 100%;
+          background-color: rgb(197, 230, 241);
+          right: 0px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          justify-content: space-around;
+        }
+
+        .sl_title {
+          align-items: center;
+          text-align: center;
+          margin: auto;
+          margin-top: -10px;
+          color: black;
+          text-shadow: 1px 1px whitesmoke;
+          font-size: larger;
+          width: 100%;
+          left: 0px;
+          top: 0%
+        }
+
+        .thinking_man {
+          margin-top: 0px;
+        }
+
+        .teacher_bio {
+          flex-direction: column;
+        }
+      }
+
+      @media screen and (max-width:1200px) {
+        .teachers {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title_bar" style="display:flex;">
+      <img src="imgs/IMG_0381.jpeg" alt="Flume Panorama" style="width:100%;">
+      <div class="sl_title">
+        <h1>
+          <b>Schola Lingua</b>
+        </h1>
+        <p style="margin-top: -20px; font-size:larger;">
+          <b>Curricula</b>
+        </p>
+      </div>
+      <div class="navbar">
+        <a href="index.html"> Home </a>
+        <a href="sl_grounds.html"> Grounds </a>
+        <a href="sl_staff.html"> Teachers </a>
+        <a href="sl_outreach.html"> Sibling Schools </a>
+      </div>
+    </div>
+    <div class="thinking_man" style="display:flex; flex-direction: row; justify-content: center;">
+      <img src="imgs/fleur-de-lis_left.png" alt="fleur_de_lis_left" style="z-index: -2; height:100px; width:100px; display:block; margin-left:auto; margin-right:auto; margin-top:auto; margin-bottom: auto; padding-right: 20px;">
+      <img src="imgs/0512_the-thinker05-wide.jpeg" alt="Thinking Man Sculpture" style="z-index: -1; margin:auto; max-height: 350px; display: flex; justify-content: center;">
+      <img src="imgs/fleur-de-lis_right.png" alt="fleur_de_lis_right" style="z-index: -2; height:100px; width:100px; display:block; margin-left:auto; margin-right:auto; margin-top:auto; margin-bottom: auto; padding-left: 20px">
+    </div>
+    <p style="text-align: center; font-size: larger;">
+      <i>"Contre l'ignorance des signes propres, le grand remède est la connaissance des langues."</i>
+    </p>
+    <div class="Curricula" style="background-color: white; padding: 10px; border-radius: 10px; opacity: 85%; margin: 10px;">
+      <h2>Programs of Study:</h2>
+      <p style="border-left: 1px solid #000; padding-left:7px;"> Schola Lingua offers complete curricula for students in the following langauge families. All students are welcome, but all students above 10 years of age must make a commitment to live on campus in order to fully immerse in the langauge. Semesters are four months and run year-long. All room & board is accounted for in tuition. Sixteen full semesters at Schola Lingua will render a student fluent in reading, writing, speaking, and listening in the target language. See the following programs of study for target language options.</p>
+    </div>
+    <div class="sticky_programs" style="margin: 10px; z-index: 1; background-color: white; opacity:100%; font-size: large; border-radius: 10px; display:flex; justify-content: center;">
+      <div style="padding:10px; Padding-bottom:0px; padding-top: 0px;">
+        <a href="#romance_languages">Romance Languages</a>
+      </div>
+      <div style="padding:10px; Padding-bottom:0px; padding-top: 0px;">
+        <a href="#germanic_languages">Germanic Languages</a>
+      </div>
+      <div style="padding:10px; Padding-bottom:0px; padding-top: 0px;">
+        <a href="#slavic_languages">Slavic Languages</a>
+      </div>
+    </div>
+    <div id="romance_languages" style="background-color: white; padding: 10px; border-radius: 10px; opacity: 85%; margin: 10px;">
+      <h3> Romance Languages (Latinates) </h3>
+      <p style="border-left: 1px solid #000; padding-left:7px;"> Immerse yourself in French (Quebequis or Parisian), Portugues (Brazilian or European), Spanish (various dialects including Mexican & European), and Italian. </p>
+      <p style="text-align: center;">
+        <a href="https://en.wikipedia.org/wiki/Romance_languages"> Learn more about the Romance Languages</a> | <a href="https://en.wikipedia.org/wiki/French"> French </a> | <a href="https://en.wikipedia.org/wiki/Spanish"> Spanish </a> | <a href="https://en.wikipedia.org/wiki/Portuguese_language"> Portuguese </a> | <a href="https://en.wikipedia.org/wiki/Italian_language"> Italian </a>
+      </p>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; flex-direction:row; flex-shrink: 3; justify-content: space-evenly;">
+      <div class="grounds_image">
+        <img src="imgs/french_culinary_arts.png" alt="cabin" style="max-width:400px; max-height:400px;">
+        <div class="text-block">
+          <h4>Culinary Arts</h4>
+          <p>hone your cooking skills in your target language</p>
+        </div>
+      </div>
+      <div class="grounds_image">
+        <img src="imgs/spanish_equestrian.png" alt="lakeview" style="max-width:400px; max-height:400px;">
+        <div class="text-block">
+          <h4>Hippotherapy</h4>
+          <p>care for animals in your target language</p>
+        </div>
+      </div>
+      <div class="grounds_image">
+        <img src="imgs/italian_fine_arts.png" alt="cabin interior" style="max-width:400px; max-height:400px;">
+        <div class="text-block">
+          <h4>Fine Arts</h4>
+          <p>painting & photography in your target langauge</p>
+        </div>
+      </div>
+    </div>
+    <div id="germanic_languages" style="background-color: white; padding: 10px; border-radius: 10px; opacity: 85%; margin: 10px;">
+      <h3> Germanic Languages </h3>
+      <p style="border-left: 1px solid #000; padding-left:7px;"> Immerse yourself in the rich variety of German dialects, including Bavarian, Swabian, and of course Hochdeutsch. Schola Lingua also offers programs in Dutch, Afrikaans, Icelandic, and Norweigian. Advanced students may also take non-immersian courses focused on Old English, and the development of English (the most commonly spoken Germanic language on Earth).</p>
+      <p style="text-align: center;">
+        <a href="https://en.wikipedia.org/wiki/Germanic_languages"> Learn more about the Germanic Languages</a> | <a href="https://en.wikipedia.org/wiki/German_language"> German</a> | <a href="https://en.wikipedia.org/wiki/Dutch_language"> Dutch</a> | <a href="https://en.wikipedia.org/wiki/Afrikaans"> Afrikaans</a> | <a href="https://en.wikipedia.org/wiki/English_language"> English </a>
+      </p>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; flex-direction:row; flex-shrink: 3; justify-content: space-evenly;">
+      <div class="grounds_image">
+        <img src="imgs/germanic_carpentry.png" alt="carpentry" style="max-width:400px; max-height:400px;">
+        <div class="text-block">
+          <h4>Woodworking Arts</h4>
+          <p>hone your crafting skills in your target language</p>
+        </div>
+      </div>
+      <div class="grounds_image">
+        <img src="imgs/germanic_vintnery.png" alt="vintnery" style="max-width:400px; max-height:400px;">
+        <div class="text-block">
+          <h4>Vintnery</h4>
+          <p>explore your inner conneseur in your target language</p>
+        </div>
+      </div>
+      <div class="grounds_image">
+        <img src="imgs/germanic_sailing.png" alt="sailing" style="max-width:400px; max-height:400px;">
+        <div class="text-block">
+          <h4>Seamanship</h4>
+          <p>take your target language to the sea</p>
+        </div>
+      </div>
+    </div>
+    <div id="slavic_languages" style="background-color: white; padding: 10px; border-radius: 10px; opacity: 85%; margin: 10px;">
+      <h3> Slavic Languages </h3>
+      <p style="border-left: 1px solid #000; padding-left:7px;"> Learn the rich history of the Slavic Languages, including a rich literary history in Czech, Russian, Polish, and Ukranian. Note that Slavic languages have varying degrees of alternative alphabets, so students may also learn a new <i> writing system </i> in their choice of a Slavic Language.
+      <p style="text-align: center;">
+        <a href="https://en.wikipedia.org/wiki/Slavic_languages"> Learn more about the Slavic Languages</a> | <a href="https://en.wikipedia.org/wiki/Czech_language"> Czech</a> | <a href="https://en.wikipedia.org/wiki/Russian_language"> Russian</a> | <a href="https://en.wikipedia.org/wiki/Polish_language"> Polish</a> | <a href="https://en.wikipedia.org/wiki/Ukrainian_language"> Ukranian </a>
+      </p>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; flex-direction:row; flex-shrink: 3; justify-content: space-evenly;">
+      <div class="grounds_image">
+        <img src="imgs/Cheesemaking.png" alt="Cheesemaking" style="max-width:400px; height:280px">
+        <div class="text-block">
+          <h4>Cheesemaking</h4>
+          <p>make hard & soft cheeses in your target language</p>
+        </div>
+      </div>
+      <div class="grounds_image">
+        <img src="imgs/literature.png" alt="Literature Study" style="max-width:400px; height:280px;">
+        <div class="text-block">
+          <h4>Literary Focus</h4>
+          <p>read the classics in your target language</p>
+        </div>
+      </div>
+      <div class="grounds_image">
+        <img src="imgs/viola.png" alt="Classical Music" style="max-width:400px; height:280px;">
+        <div class="text-block">
+          <h4>Classics</h4>
+          <p>Study classical music in your target language</p>
+        </div>
+      </div>
+    </div>
+    <div class="bottom_bar" style="margin:auto; text-align: center;font-size: larger;">
+      <p> 123 MakeBelieve Street The White Mountains, NH 03399 | <a href="mailto:danchaines@icloud.com"> Email Schola Lingua </a>
+      </p>
+    </div>
+  </body>
+  <!--navbar-->

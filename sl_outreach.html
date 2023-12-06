@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>W3.CSS Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./W3.CSS_Template_files/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+      body {
+        font-family: "Times New Roman", Georgia, Serif;
+        background-image: url("imgs/globe.png");
+        background-repeat: no-repeat;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+      }
+
+      .title_bar {
+        opacity: 100%;
+        position: relative;
+        margin-top: 10px;
+        align-items: center;
+      }
+
+      .navbar {
+        margin-top: 5px;
+        text-align: right;
+        font-family: Georgia;
+        font-style: oblique;
+        position: absolute;
+        bottom: 5%;
+        right: 10px;
+        color: white;
+        text-shadow: 1px 1px black;
+        font-size: larger;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .sl_title {
+        position: absolute;
+        top: 0%;
+        left: 20px;
+        text-shadow: 1px 1px white;
+        text-align: center;
+      }
+
+      .thinking_man {
+        margin-top: 20px;
+      }
+
+      .who_we_are {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .bottom_bar {
+        background-color: rgb(197, 230, 241);
+      }
+
+      @media screen and (max-width:580px) {
+        .title_bar {
+          opacity: 100%;
+          /*position: relative;*/
+          margin-top: 10px;
+          align-items: center;
+          text-align: center;
+          width: 100%;
+          font-size: 80%;
+        }
+
+        .navbar {
+          margin-top: 5px;
+          text-align: center;
+          align-items: center;
+          font-family: Georgia;
+          font-style: oblique;
+          /*position: absolute;*/
+          bottom: -30px;
+          /*right: 5px;*/
+          color: whitesmoke;
+          text-shadow: 1px 1px black;
+          font-size: 90%;
+          width: 100%;
+          background-color: rgb(197, 230, 241);
+          right: 0px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          justify-content: space-around;
+        }
+
+        .sl_title {
+          align-items: center;
+          text-align: center;
+          margin: auto;
+          margin-top: -10px;
+          color: black;
+          text-shadow: 1px 1px whitesmoke;
+          font-size: larger;
+          width: 100%;
+          left: 0px;
+          top: 0%
+        }
+
+        .thinking_man {
+          margin-top: 0px;
+        }
+
+        .who_we_are {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title_bar" style="display:flex;">
+      <img src="imgs/IMG_0381.jpeg" alt="Flume Panorama" style="width:100%; border-radius: 10px;">
+      <div class="sl_title">
+        <h1>
+          <b>Schola Lingua</b>
+        </h1>
+        <p style="margin-top: -20px; font-size:larger;">
+          <b>Partner Schools</b>
+        </p>
+      </div>
+      <div class="navbar">
+        <!--<a href= "sl_index.html"> Schola Lingua Homepage |</a><br> -->
+        <a href="index.html"> Home </a>
+        <a href="sl_grounds.html"> Grounds </a>
+        <a href="sl_curricula.html"> Curricula </a>
+        <a href="sl_staff.html"> Teachers </a>
+      </div>
+    </div>
+    <div class="thinking_man" style="display:flex; flex-direction: row; justify-content: center;">
+      <!--<img src="imgs/fleur-de-lis_left.png" alt="fleur_de_lis_left" style="z-index: -2; height:100px; width:100px; display:block; margin-left:auto; margin-right:auto; margin-top:auto; margin-bottom: auto; padding-right: 20px;"> -->! <img src="imgs/0512_the-thinker05-wide.jpeg" alt="Thinking Man Sculpture" style="z-index: -1; margin:auto; max-height: 350px; display: flex; justify-content: center; border-radius: 10px;">
+      <!-- <img src="imgs/fleur-de-lis_right.png" alt="fleur_de_lis_right" style="z-index: -2; height:100px; width:100px; display:block; margin-left:auto; margin-right:auto; margin-top:auto; margin-bottom: auto; padding-left: 20px"> -->!
+    </div>
+    <p style="text-align: center; font-size: larger; background-color: white; border-radius: 10px; opacity: 75%; width:fit-content; margin:auto; margin-top: 10px;">
+      <i>"Os limites da minha linguagem são os limites do meu mundo."</i>
+    </p>
+    <div class="what_we_offer" style="background-color: white; padding: 10px; border-radius: 10px; opacity: 75%; padding-top:10px; margin:10px;">
+      <h3>Foreign Service, Education, & Volunteer Opportunities </h3>
+      <p style="border-left: 1px solid #000; padding-left:7px;">Schola Lingua recognizes that travel abroad is a major motivating factor for language learners. Schola Lingua encourages and fosters relationships overseas with like-minded schools around the world. These sibling schools offer tuition in various culturally and linguistically subjects of their homeland, and may at times offer volunteer roles or even employment opportunities for sufficiently competent students of Schola Lingua. </p>
+    </div>
+    <div class="who_we_are" style="display:flex; background-color: white; padding: 10px; border-radius: 10px; opacity: 75%; margin: 10px;">
+      <div class="teachers">
+        <h3> Manompana High School </h3>
+        <p style="border-left: 1px solid #000; padding-left:7px;">High School Manompana lies on the northwest coast of Madagascar, a mile from the shores of the Baie de Titingue. HS Manompana serves a remote community of learners from rural and agricultural families. French is the spoken and taught language of the school as it is one of two official languages of the island. Schola Lingua students who wish travel to Manompana High School must demonstrate high proficiency in French and/or Malagasy.</p>
+      </div>
+      <img src="imgs/manompana_hs.png" alt="Manompana HS" style="width:300px; height:200px; margin-left:auto; margin-right:auto; margin: auto;">
+    </div>
+    <div class="who_we_are" style="display:flex; background-color: white; padding: 10px; border-radius: 10px; opacity: 75%; margin: 10px;">
+      <div class="teachers">
+        <h3> Der Dialog Sprachcampus </h3>
+        <p style="border-left: 1px solid #000; padding-left:7px;">Located in the heart of Vienna, Der Dialog offers comprehensive language education in German and English for high school students and adults. Der Dialog is a longtime partner of Schola Lingua and many of our respective staffs have shared teaching resources and students. Der Dialog Sprachcampus offers semester- or year-long courses, with volunteer and employment opportunities. Students of Schola Lingua who wish to study abroad at Der Dialog Sprachcampus must demonstrate proficiency in German (Hochdeutsch).</p>
+      </div>
+      <img src="imgs/der_dialog_austria.png" alt="Dialog Sprachcampus" style="width:300px; height:200px; margin-left:auto; margin-right:auto; margin:auto;">
+    </div>
+    <div class="bottom_bar" style="margin:auto; text-align: center; font-size: larger;">
+      <p> 123 MakeBelieve Street The White Mountains, NH 03399 | <a href="mailto:danchaines@icloud.com"> Email Schola Lingua </a>
+      </p>
+    </div>
+  </body>
+  <!--navbar-->
